@@ -1,0 +1,44 @@
+@import '../../../index.scss';
+
+.album-card {
+    // border: 2px solid red;
+    width : 200px;
+    @include flexbox;
+    flex-direction: column;
+    padding: 10px;
+    color : $white-color;
+    font-size: 17px;
+    text-align: left;
+
+    &__cover{
+
+        width : 100%;
+        // border : 2px solid red;
+
+        img{
+            width : 100%;
+            cursor: pointer;
+        }
+
+        &__followers{
+            background-color: $white-color;
+            padding: 10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+
+            .followers{
+                width : max-content;
+                background-color: $black-color;
+                border-radius: 20px;
+                text-align: center;
+                padding: 5px 10px;
+                font-size: 15px;
+            }
+        }
+    }
+
+    &__name{
+        width : 100%;
+        padding: 5px 0;
+    }
+}
