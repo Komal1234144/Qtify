@@ -5,8 +5,9 @@ import {
   Outlet,
   useLocation,
 } from "react-router-dom";
-import {useEffect} from 'react';
+import { useEffect } from 'react';
 import Header from "./Components/Header/Header";
+import HomePage from "./Pages/HomePage/HomePage";
 
 const Routemaker = () => {
 
@@ -21,25 +22,25 @@ const Routemaker = () => {
   return (
     <div style={{ height: "100%" }}>
       <Header />
-      <Outlet/>
+      <Outlet />
     </div>
   );
 };
 
 function App() {
   return (
-   
-   
-        <BrowserRouter>
-          <Routes>
-            
-            <Route path="/*" element={<Routemaker/>}>
 
-            </Route>
-           
-          </Routes>
-        </BrowserRouter>
-    
+
+    <BrowserRouter>
+      <Routes>
+
+        <Route path="/*" element={<Routemaker />}>
+          <Route path="" element={<HomePage />} />
+        </Route>
+
+      </Routes>
+    </BrowserRouter>
+
   );
 }
 

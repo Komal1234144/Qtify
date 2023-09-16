@@ -1,0 +1,36 @@
+@import '../../../index.scss';
+
+.hero-container {
+    width: 100%;
+    // border: 2px solid yellowgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: $black-color;
+    color: $white-color;
+
+    .hero-content {
+        flex: 0.5;
+        padding-right: 20px;
+        // border: 2px solid yellowgreen;
+
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            text-align: right;
+        }
+    }
+
+    .hero-image {
+        flex: 0.4;
+        // border: 2px solid yellowgreen;
+
+
+        img {
+            width: 30%;
+        }
+    }
+
+}
