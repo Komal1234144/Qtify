@@ -17,9 +17,75 @@ h4 {
     box-sizing: border-box;
 
     &__card {
-        width: 14.10%;
+        width: 100%;
     }
 }
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    // border: 4px solid red;
+}
+
+.swiper-slide {
+    width: 14.10% !important;
+    text-align: center;
+    font-size: 18px;
+    // background: #fff;
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    // border : 2px solid green;
+}
+
+.swiper {
+    width: 100%;
+    // height: 300px;
+    // margin: 20px auto;
+}
+
+.append-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.swiper-button-next,
+.swiper-button-prev {
+    background-color: white;
+    width : 40px !important;
+    height: 40px !important;
+    background-position: center;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    padding: 8px 16px;
+    border-radius: 100%;
+    // border: 2px solid black;
+    // color: red;
+}
+
+.swiper-button-prev {
+    background-image: url('../../../assets/left-arrow.png');
+}
+
+.swiper-button-next {
+    background-image: url('../../../assets/right-arrow.png');
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    content: "" !important;
+}
+
 
 @media (max-width : $medium-size) {
     .grid {
