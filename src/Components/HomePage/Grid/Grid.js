@@ -44,7 +44,7 @@ const Grid = ({ type, name }) => {
         {
           songs?.map((song, index) => {
             return <div className='grid__card'>
-              <AlbumCard key={index} title={song?.title} image={song?.image} follows={song?.follows} />
+              <AlbumCard key={index} title={song?.title} image={song?.image} follows={song?.follows} likes={song?.likes}/>
             </div>
           })
         }
