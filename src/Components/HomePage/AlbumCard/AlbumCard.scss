@@ -1,8 +1,9 @@
 @import '../../../index.scss';
 
 .album-card {
-    // border: 2px solid red;
-    width : 200px;
+    border: 2px solid red;
+    width : 100%;
+    height: 300px;
     @include flexbox;
     flex-direction: column;
     padding: 10px;
@@ -13,14 +14,18 @@
     &__cover{
 
         width : 100%;
+        height: 250px;
         // border : 2px solid red;
 
         img{
             width : 100%;
+            height: 80%;
+            // object-fit: cover;
             cursor: pointer;
         }
 
         &__followers{
+            height: 20%;
             background-color: $white-color;
             padding: 10px;
             border-bottom-left-radius: 10px;
@@ -39,6 +44,7 @@
 
     &__name{
         width : 100%;
+        height: 50px;
         padding: 5px 0;
     }
 }

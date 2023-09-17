@@ -2,6 +2,7 @@ import React from 'react'
 import './HomePage.scss';
 import Hero from '../../Components/HomePage/Hero/Hero';
 import AlbumCard from '../../Components/HomePage/AlbumCard/AlbumCard';
+import Grid from '../../Components/HomePage/Grid/Grid';
 
 
 const HomePage = () => {
@@ -9,9 +10,11 @@ const HomePage = () => {
         <div className='home'>
             <Hero />
 
-            <div className='p-5'>
+            {/* <div className='p-5'>
                 <AlbumCard />
-            </div>
+            </div> */}
+
+            <Grid type="top" name="Top Albums"/>
 
         </div>
     )
