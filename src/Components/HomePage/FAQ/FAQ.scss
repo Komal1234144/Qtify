@@ -1,0 +1,53 @@
+@import '../../../index.scss';
+
+.faq {
+    width: 100%;
+    padding: 20px;
+    // border: 2px solid red;
+
+    h1 {
+        color: $white-color;
+        text-align: center;
+        font-size: 40px;
+        font-weight: 700;
+        letter-spacing: 4px;
+        margin-bottom: 10px;
+    }
+
+    .accordion-container {
+        width: 70%;
+        margin: auto;
+        margin: 20px auto;
+
+        .accordion {
+            margin: 15px 0;
+            background-color: $white-color;
+            color: $white-color;
+            border: 2px solid $white-color;
+            border-radius: 10px;
+        }
+
+        .accordion-summary{
+            border-radius: 10px;
+            background-color: $black-color;
+
+            &__ques{
+                font-size: 18px;
+            }
+        }
+
+        .icon{
+            color : $primary-color;
+            font-size: 50px !important;
+            // border: 2px solid white;
+        }
+
+        .accordion-details {
+            border-radius: 10px;
+            padding: 20px;
+            background-color: $white-color;
+            color: $black-color;
+        }
+
+    }
+}

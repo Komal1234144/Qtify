@@ -2,6 +2,7 @@ import React from 'react'
 import './HomePage.scss';
 import Hero from '../../Components/HomePage/Hero/Hero';
 import Grid from '../../Components/HomePage/Grid/Grid';
+import FAQ from '../../Components/HomePage/FAQ/FAQ';
 
 
 const HomePage = () => {
@@ -18,6 +19,10 @@ const HomePage = () => {
             <hr/>
 
             <Grid type="songs" name="Songs"/>
+
+            <hr/>
+
+            <FAQ/>
 
         </div>
     )
