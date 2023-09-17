@@ -15,6 +15,10 @@ const HomePage = () => {
 
             <Grid type="new" name="New Albums"/>
 
+            <hr/>
+
+            <Grid type="songs" name="Songs"/>
+
         </div>
     )
 }

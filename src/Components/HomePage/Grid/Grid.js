@@ -17,6 +17,8 @@ const Grid = ({ type, name }) => {
       url = `${BASE_URL}/albums/top`
     } else if (type === 'new') {
       url = `${BASE_URL}/albums/new`
+    }else if(type === 'songs'){
+      url = `${BASE_URL}/songs`
     }
 
 
@@ -38,7 +40,7 @@ const Grid = ({ type, name }) => {
     <>
       <h4>{name}</h4>
       <div className='grid'>
-        
+
         {
           songs?.map((song, index) => {
             return <div className='grid__card'>
