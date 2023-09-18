@@ -2,11 +2,14 @@
 
 .header {
     width: 100%;
+    box-sizing: border-box;
     padding: 10px;
+    padding-right: 20px;
     background-color: $primary-color;
     font-size: 17px;
     @include flexbox;
     justify-content: space-between;
+    border : 2px solid red;
 
     &__logo,
     &__feedback {

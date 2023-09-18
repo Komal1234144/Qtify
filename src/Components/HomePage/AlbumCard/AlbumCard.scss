@@ -1,5 +1,9 @@
 @import '../../../index.scss';
 
+.tooltip{
+    border : 2px solid red;
+}
+
 .album-card {
     // border: 2px solid red;
     width : 100%;
@@ -10,6 +14,7 @@
     color : $white-color;
     font-size: 17px;
     text-align: left;
+
 
     &__cover{
 

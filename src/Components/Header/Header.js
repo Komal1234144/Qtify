@@ -3,6 +3,7 @@ import './Header.scss';
 import logo from '../../assets/logo.png';
 import { AiOutlineSearch } from 'react-icons/ai';
 
+
 const Header = () => {
     return (
         <>
@@ -22,9 +23,9 @@ const Header = () => {
                 {
                     window.innerWidth > 600
                     &&
-                    <div className='header__feedback'>
-                        <button>Give Feedback</button>
-                    </div>
+                        <div className='header__feedback'>
+                            <button>Give Feedback</button>
+                        </div>
                 }
             </div>
 

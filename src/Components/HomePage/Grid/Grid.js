@@ -10,9 +10,7 @@ import 'swiper/css/navigation';
 import { Pagination, Navigation } from 'swiper/modules';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
-import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-
 
 function a11yProps(index) {
   return {
@@ -35,7 +33,7 @@ const Grid = ({ type, name }) => {
         Content: 'application/json',
       })
       .then((response) => {
-        console.log(response)
+        // console.log(response)
         if(response.status === 200){
           setGenres(response?.data?.data)
         }
@@ -66,7 +64,7 @@ const Grid = ({ type, name }) => {
         Content: 'application/json',
       })
       .then((response) => {
-        console.log(response);
+        // console.log(response);
         if (response.status === 200) {
           setSongs(response.data)
         }
@@ -128,7 +126,7 @@ const Grid = ({ type, name }) => {
             songs?.map((song, index) => {
               return <SwiperSlide>
                 <div className='grid__card'>
-                  <AlbumCard key={index} title={song?.title} image={song?.image} follows={song?.follows} likes={song?.likes} />
+                  <AlbumCard key={index} title={song?.title} image={song?.image} follows={song?.follows} likes={song?.likes} noOfSongs={song?.songs?.length}/>
                 </div>
               </SwiperSlide>
             })
