@@ -90,8 +90,8 @@ h4 {
 @media (max-width : $medium-size) {
     .grid {
 
-        &__card {
-            width: 25%;
+        .swiper-slide {
+            width: 25% !important;
         }
     }
 }
@@ -99,8 +99,8 @@ h4 {
 @media (max-width : $small-size) {
     .grid {
 
-        &__card {
-            width: 50%;
+        .swiper-slide {
+            width: 50% !important;
         }
     }
 }
