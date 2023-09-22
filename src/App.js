@@ -8,6 +8,7 @@ import {
 import { useEffect } from 'react';
 import Header from "./Components/Header/Header";
 import HomePage from "./Pages/HomePage/HomePage";
+import InvAlbum from "./Pages/InvAlbum/InvAlbum";
 
 const Routemaker = () => {
 
@@ -36,6 +37,9 @@ function App() {
 
         <Route path="/*" element={<Routemaker />}>
           <Route path="" element={<HomePage />} />
+          <Route path="album">
+            <Route path=":slug" element={<InvAlbum/>} />
+          </Route>
         </Route>
 
       </Routes>

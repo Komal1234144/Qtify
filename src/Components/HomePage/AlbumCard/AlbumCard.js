@@ -14,12 +14,18 @@ const CustomWidthTooltip = styled(({ className, ...props }) => (
   
 
 
-const AlbumCard = ({ title, image, follows, likes , noOfSongs}) => {
+const AlbumCard = ({ title, image, follows, likes , noOfSongs , slug}) => {
     return (
         <CustomWidthTooltip title={noOfSongs ? `${noOfSongs} songs` : ''} arrow 
         placement = "top"
         >
-            <div className='album-card'>
+            <div className='album-card'
+            onClick={()=>{
+                if(follows){
+                    window.location.href = `/album/${slug}`
+                }
+            }}
+            >
                 <div className='album-card__cover'>
                     <img src={image} alt="" />
                     <div className='album-card__cover__followers'>

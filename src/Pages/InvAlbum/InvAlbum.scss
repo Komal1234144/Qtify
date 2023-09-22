@@ -1,0 +1,142 @@
+@import '../../index.scss';
+
+.inv-album {
+    width: 100%;
+    background-color: $black-color;
+    padding-bottom: 120px;
+    // border : 2px solid red;
+
+    .icon {
+        color: $white-color;
+        font-size: 30px;
+        margin: 20px;
+        cursor: pointer;
+    }
+
+    &__details {
+        margin-top: 20px;
+        @include flexbox;
+        align-items: stretch;
+        // border : 2px solid green;
+
+        &__cover {
+            flex: 0.3;
+            // border : 2px solid red;
+
+            img {
+                display: block;
+                width: 60%;
+                height: 250px;
+                margin: auto;
+                border-radius: 15px;
+            }
+        }
+
+        &__info {
+            flex: 0.5;
+            color: $white-color;
+            @include flexbox;
+            flex-direction: column;
+            align-items: flex-start;
+            font-size: 15px;
+            // border : 2px solid blue;
+
+            h1 {
+                font-size: 35px;
+            }
+
+            p {
+                margin: 5px 0;
+                font-weight: 200;
+            }
+
+            div {
+                // border : 2px solid red;
+
+                button {
+                    margin: 5px;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                    border: none;
+                    background-color: $primary-color;
+                    color: $white-color;
+                    font-size: 15px;
+                    cursor: pointer;
+
+                }
+
+                .library-btn {
+                    background-color: $black-color;
+                    color: $primary-color;
+                    border: 1px solid $primary-color;
+                }
+            }
+        }
+    }
+
+    &__pagination{
+        width: 95%;
+        margin: auto;
+        @include flexbox;
+        justify-content: flex-end;
+        // border : 1px solid red;
+
+        .icon{
+            font-size: 25px;
+        }
+
+        &__page , &__page-active{
+            color : $white-color;
+            width : 20px;
+            height: 20px;
+            font-size: 15px;
+            border-radius: 50%;
+            @include flexbox;
+            margin: 0 2px;
+            cursor: pointer;
+        }
+
+        &__page-active{
+            background-color: $primary-color;
+        }
+    }
+
+    table {
+        // border: 2px solid red;
+        width: 90%;
+        margin: auto;
+        margin-top: 20px;
+
+        thead {
+            // border: 2px solid green;
+            color: $white-color;
+            font-size: 14px;
+
+            th {
+                width: 33.33%;
+                font-weight: 100 !important;
+                padding: 5px 15px;
+            }
+        }
+
+        tbody{
+            // border: 2px solid blue;
+            color: #bbbbbb;
+            font-size: 14px;
+
+            td {
+                width: 33.33%;
+                padding: 15px;
+                border-bottom: 1px solid #bbbbbb;
+
+                img{
+                    width : 60px;
+                    height : 60px;
+                    border-radius: 10px;
+                    display: inline-block;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+}

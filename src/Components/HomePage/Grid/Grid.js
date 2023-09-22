@@ -126,7 +126,7 @@ const Grid = ({ type, name }) => {
             songs?.map((song, index) => {
               return <SwiperSlide>
                 <div className='grid__card'>
-                  <AlbumCard key={index} title={song?.title} image={song?.image} follows={song?.follows} likes={song?.likes} noOfSongs={song?.songs?.length}/>
+                  <AlbumCard key={index} title={song?.title} image={song?.image} follows={song?.follows} likes={song?.likes} noOfSongs={song?.songs?.length} slug={song?.slug}/>
                 </div>
               </SwiperSlide>
             })
